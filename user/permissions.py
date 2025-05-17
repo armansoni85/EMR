@@ -11,12 +11,26 @@ class CanCreateUser(BasePermission):
         if user.is_authenticated:
             if user.is_superuser:
                 return True
-            if request.user.role == RoleType.hospital_admin.value[0]:
+
+            if request.data["hospital"] != str(user.hospital_id):
+                return False
+
+            current_user_role = user.role
+            # requested user role to be created
+            requested_user_role = request.data["role"]
+            if (
+                current_user_role == RoleType.doctor.value[0]
+                and requested_user_role == RoleType.patient.value[0]
+            ):
+                return True
+            if current_user_role == RoleType.hospital_admin.value[
+                0
+            ] and requested_user_role in [
+                RoleType.patient.value[0],
+                RoleType.doctor.value[0],
+            ]:
                 # hospital admin cannot create hospital admin itself
-                if request.data["hospital"] == str(user.hospital_id) and request.data[
-                    "role"
-                ] in [RoleType.patient.value[0], RoleType.doctor.value[0]]:
-                    return True
+                return True
         return False
 
 

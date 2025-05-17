@@ -191,6 +191,9 @@ class CustomUserSerializer(CountryFieldMixin, serializers.ModelSerializer):
 
 
 class UserListSerializers(serializers.ModelSerializer):
+    country = serializers.SerializerMethodField()
+    flag = serializers.SerializerMethodField()
+
     class Meta:
         model = CustomUser
         fields = (
@@ -202,14 +205,14 @@ class UserListSerializers(serializers.ModelSerializer):
             "email",
             "role",
             "country",
+            "flag",
             "last_login",
             "is_active",
             "is_blocked",
         )
 
-    def to_representation(self, instance):
-        data = super().to_representation(instance)
-        if instance.country:
-            data["country"] = instance.country.name
-            data["flag"] = instance.country.flag
-        return data
+    def get_country(self, instance):
+        return instance.country.name if instance.country else None
+
+    def get_flag(self, instance):
+        return instance.country.flag if instance.country else None

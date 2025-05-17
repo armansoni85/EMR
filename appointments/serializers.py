@@ -5,6 +5,7 @@ from rest_framework import serializers
 from base.utils import get_current_datetime
 
 # importing from the app
+from user.models import CustomUser
 from .models import Appointment
 from user.serializers import UserListSerializers
 from user.choices import RoleType
@@ -14,6 +15,7 @@ from strings import (
     PATIENT_DOCTOR_HOSPITAL_DIFFERENT,
     APPOINTMENT_ALREADY_BOOKED,
     APPOINTMENT_PAST_DATE,
+    DOCTOR_AND_PATIENTS_REQUIRED,
 )
 
 
@@ -35,6 +37,9 @@ class AppointmentListSerializer(serializers.ModelSerializer):
 
 
 class AppointmentSerializer(serializers.ModelSerializer):
+    doctor = serializers.UUIDField(required=False)
+    patient = serializers.UUIDField(required=False)
+
     class Meta:
         model = Appointment
         fields = [
@@ -46,7 +51,7 @@ class AppointmentSerializer(serializers.ModelSerializer):
             "disease",
             "appointment_status",
         ]
-        read_only_fields = ["id", "patient"]
+        read_only_fields = ["id"]
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
@@ -56,33 +61,41 @@ class AppointmentSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
         data = super().validate(attrs)
-        doctor = data.get("doctor")
         request = self.context["request"]
         user = request.user
         user_role = user.role
         instance = self.instance
+
         if user_role == RoleType.patient.value[0]:
             data["patient"] = user
+            data["doctor"] = CustomUser.objects.filter(id=data["doctor"]).first()
+        elif user_role == RoleType.doctor.value[0]:
+            data["doctor"] = user
+            data["patient"] = CustomUser.objects.filter(id=data["patient"]).first()
 
         method = request.method
-        if method == "PUT":
-            doctor = instance.doctor
+        if method == "POST" and not all([data["doctor"], data["patient"]]):
+            raise serializers.ValidationError(DOCTOR_AND_PATIENTS_REQUIRED)
+        elif method == "PUT":
+            data["doctor"] = data.get("doctor") or instance.doctor
+            data["patient"] = data.get("patient") or instance.patient
             data["appointment_datetime"] = instance.appointment_datetime
             if user_role != RoleType.doctor.value[0]:
                 data.pop("appointment_status", None)
 
-        # validate doctor and patient is of same hospital
-        if doctor.hospital_id != user.hospital_id:
+        # validate doctor and patient are from the same hospital
+        if data["doctor"].hospital_id != data["patient"].hospital_id:
             raise serializers.ValidationError(PATIENT_DOCTOR_HOSPITAL_DIFFERENT)
 
-        # # validate appointment datetime cannot be in past
+        # validate appointment datetime is not in the past
         if get_current_datetime() > data["appointment_datetime"]:
             raise serializers.ValidationError(APPOINTMENT_PAST_DATE)
 
         if method == "POST":
-            # check if appointment date is already booked
+            # check if appointment datetime is already booked
             if Appointment.objects.filter(
-                appointment_datetime=data["appointment_datetime"], doctor_id=doctor
+                appointment_datetime=data["appointment_datetime"],
+                doctor_id=data["doctor"].id,
             ).exists():
                 raise serializers.ValidationError(APPOINTMENT_ALREADY_BOOKED)
 

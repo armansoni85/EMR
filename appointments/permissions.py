@@ -12,6 +12,7 @@ class CanCreateAppointment(BasePermission):
             return user.role in [
                 RoleType.patient.value[0],
                 RoleType.hospital_admin.value[0],
+                RoleType.doctor.value[0]
             ]
 
         return False

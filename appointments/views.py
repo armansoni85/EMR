@@ -48,7 +48,7 @@ class AppointmentAPI(CustomViewSetV2):
                 | Q(patient__hospital_id=user.hospital_id)
             )
 
-        return qs.filter(Q(doctor_id=user.id) | Q(patient_id=user.id))
+        return qs.filter(Q(doctor_id=user.id) | Q(patient_id=user.id)).order_by('appointment_datetime')
 
     def initial(self, request, *args, **kwargs):
         method = request.method

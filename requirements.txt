@@ -75,7 +75,7 @@ python-dateutil==2.9.0.post0
 python-firebase==1.2
 python-ipware==3.0.0
 python-json-logger==2.0.7
-#python-magic-bin==0.4.14
+python-magic-bin==0.4.14
 pytz==2024.2
 PyYAML==6.0.2
 requests==2.32.3

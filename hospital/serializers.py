@@ -62,6 +62,7 @@ class HospitalSerializer(serializers.ModelSerializer):
 
         if not value:
             raise serializers.ValidationError("country is required")
+        return value
 
     def create(self, validated_data):
         return super().create(validated_data)

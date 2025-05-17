@@ -62,6 +62,7 @@ from rest_framework.serializers import ValidationError
 from base.utils import LoginThrottleRate
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.parsers import MultiPartParser
+from user.choices import RoleType
 
 
 class LoginView(CustomViewSetV2):
@@ -333,9 +334,7 @@ class ProfileAPI(CustomViewSetV2):
 
 
 class UserViewsetAPI(CustomViewSetV2):
-    """
-    This API is to create the MQG admin users, Company admin users and Merchant admin users
-    """
+    """ """
 
     permission_classes = (IsAuthenticated,)
     serializer_class = CustomUserSerializer
@@ -357,12 +356,16 @@ class UserViewsetAPI(CustomViewSetV2):
         qs = super().get_queryset()
         if self.kwargs.get("pk"):
             qs = qs.select_related("hospital")
-        if self.request.user.is_superuser:
+        current_user = self.request.user
+        if current_user.is_superuser:
             return qs
-        else:
+        elif current_user.role == RoleType.doctor.value[0]:
+            # TODO to make doctor can see only his patients ony. currently doctor can see all patients.
             return qs.filter(
-                hospital_id=self.request.user.hospital_id, is_superuser=False
+                hospital_id=current_user.hospital_id, role=RoleType.patient.value[0]
             )
+        else:
+            return qs.filter(hospital_id=current_user.hospital_id, is_superuser=False)
 
     def get_serializer_context(self):
         context = super(UserViewsetAPI, self).get_serializer_context()
