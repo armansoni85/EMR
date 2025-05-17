@@ -1,0 +1,296 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Details</title>
+    <style>
+      @font-face {
+        font-family: "BasierCircle";
+        /* Provide a name for your font */
+        src: url("{ % static 'font/BasierCircle-Regular.otf' %}") format("otf");
+        /* Use the correct file path and format */
+        /* Add other font properties like font-weight and font-style if needed */
+      }
+
+      body {
+        font-family: "BasierCircle", sans-serif;
+        /* Use the font-family you defined above */
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+      }
+
+      body {
+        background-color: #e4ede9;
+        margin: 0;
+      }
+
+      .top_background img {
+        width: 100%;
+      }
+
+      .container {
+        margin: 100px 200px 300px 200px;
+        border-radius: 60px;
+        background-color: #fff;
+        padding: 70px;
+        color: #181935;
+        font-size: 42px;
+      }
+
+      .heading {
+        font-size: 62px;
+        margin-bottom: 70px;
+      }
+
+      .hello {
+        margin-bottom: 50px;
+        font-size: 42px;
+      }
+
+      .paragraph {
+        margin-bottom: 50px;
+      }
+
+      .footer {
+        margin-top: 100px;
+        font-size: 36px;
+        line-height: 1.6;
+      }
+
+      .footer_child {
+        margin-bottom: 50px;
+      }
+
+      .footer_child a {
+        text-decoration: none;
+        color: #405a71;
+        display: inline-block;
+      }
+
+      .contact {
+        font-weight: 600;
+      }
+
+      .social_box {
+        position: relative;
+        padding-left: 250px;
+      }
+
+      .social_box span {
+        display: inline-block;
+        margin: auto;
+        margin-top: auto;
+      }
+
+      .social_text {
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: fit-content;
+        line-height: 1.8;
+      }
+
+      @media screen and (max-width: 1440px) {
+        .container {
+          margin: 100px 100px 200px 100px;
+          padding: 50px;
+          font-size: 32px;
+        }
+
+        .heading {
+          font-size: 50px;
+          margin-bottom: 60px;
+        }
+
+        .hello {
+          margin-bottom: 40px;
+          font-size: 32px;
+        }
+
+        .paragraph {
+          margin-bottom: 40px;
+        }
+
+        .footer {
+          margin-top: 100px;
+          font-size: 30px;
+        }
+
+        .footer_child {
+          margin-bottom: 40px;
+        }
+
+        .social_text {
+          line-height: 1.5;
+          width: fit-content;
+        }
+
+        .social_icon a img {
+          height: 40px;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        .container {
+          margin: 50px 50px 100px 50px;
+        }
+
+        .heading {
+          font-size: 42px;
+          margin-bottom: 50px;
+        }
+
+        .hello {
+          margin-bottom: 40px;
+          font-size: 32px;
+        }
+      }
+
+      @media screen and (max-width: 786px) {
+        .container {
+          margin: 30px 30px 70px 30px;
+          padding: 30px;
+          font-size: 28px;
+        }
+
+        .heading {
+          font-size: 36px;
+        }
+
+        .hello {
+          margin-bottom: 40px;
+          font-size: 28px;
+        }
+
+        .footer {
+          margin-top: 80px;
+          font-size: 26px;
+        }
+
+        .social_box {
+          padding-left: 180px;
+        }
+
+        .social_icon a img {
+          height: 30px;
+        }
+
+        .social_text {
+          line-height: 1.4;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .container {
+          margin: 15px 15px 70px 15px;
+          padding: 20px;
+          font-size: 24px;
+          border-radius: 30px;
+        }
+
+        .heading {
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
+
+        .hello {
+          margin-bottom: 30px;
+          font-size: 24px;
+        }
+
+        .footer {
+          margin-top: 80px;
+          font-size: 22px;
+        }
+
+        .social_box {
+          padding-left: 150px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="top_background">
+        <img src="{% static 'img/mgas.png' %}" alt="" />
+        <!-- <img src="./img/mgas.png" alt=""  /> -->
+    </section>
+    <section class="container">
+      <h1 class="heading">¡Bienvenido al portal másquegas!</h1>
+      <h2 class="hello">¡Hola, <span>{{full_name}}</span>!</h2>
+      <div style="color: #181935" class="paragraph">
+        El equipo de Más Que Gas te da la bienvenida a tu portal. A partir de
+        este momento ya puedes ingresar a la plataforma. Por favor ingresa al
+        portal de Masquegas con las siguientes credenciales:
+      </div>
+      <div class="paragraph">
+        <div>
+          <span style="font-weight: 600">Usuario: </span>
+          <span>{{email}}</span>
+        </div>
+        <div>
+          <span style="font-weight: 600">Contraseña: </span>
+          <span>{{password}}</span>
+        </div>
+        {% if ationet_password %}
+        <div>
+          <span style="font-weight: 600">Ationet Contraseña: </span>
+          <span>{{ationet_password}}</span>
+        </div>
+        {% endif %}
+      </div>
+      {% if ationet_password %}
+      <div>
+        Dado que usted es un usuario existente en ationet, también recibió la
+        contraseña de ationet.
+      </div>
+      {% endif %}
+      <div>
+        Por favor, si tienes alguna pregunta o necesitas nueva información
+        puedes contactarnos a través del correo
+      </div>
+      <section class="footer">
+        <div class="contact footer_child">
+          <div style="color: #405a71" class="social_box">
+            <span class="social_text"> Síguenos en:</span>
+
+            <span class="social_icon">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'img/facebook.png' %}" alt="" style="cursor: pointer" /></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer"><img src="{% static 'img/instagram.png' %}" alt="" style="cursor: pointer" /></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'img/linkedin.png' %}" alt="" style="cursor: pointer" /></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'img/tiktok.png' %}" alt="" style="cursor: pointer" /></a>
+            </span>
+          </div>
+          <p style="color: #405a71">Este correo no admite respuestas.</p>
+          <p style="color: #405a71">
+            <a href="tel:656 289 66 00" target="_blank" rel="noopener noreferrer">T. 656 289 66 00</a>
+          </p>
+        </div>
+        <div class="footer_child">
+          <p>
+            <a href="http://" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #405a71">
+              Términos y condiciones</a>
+          </p>
+          <p>
+            <a href="http://" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #405a71">
+              Política de Privacidad</a>
+          </p>
+        </div>
+        <div class="footer_child">
+          <p style="color: #405a71">Másquegas, 2023</p>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

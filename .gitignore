@@ -1,0 +1,10 @@
+.venv
+venv
+.env
+*.pyc
+media
+en.py
+assets/
+db_queries.log
+emr_py_env
+hospital/logo/
