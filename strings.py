@@ -1,5 +1,13 @@
 from django.utils.translation import gettext as _
 
+ERROR_IN_THE_REQUEST = _("Error in the request.")
+APPLICATION_ERROR_MESSAGE = _("Application Error.")
+DO_NOT_HAVE_PERMISSION_MESSAGE = _("Permission Denied")
+RESOURCE_NOT_FOUND_MESSAGE = _("Resource not found")
+INVALID_REQUEST = _("Invalid Request")
+VALIDATION_ERROR_MESSAGE = _("Validation Error")
+API_ERROR_MESSAGE = _("API Error.")
+RECORD_NOT_FOUND_MESSAGE = _("Record Not Found")
 INVALID_LINK = _("Invalid link.")
 ONLY_SUPPORTED_FOR_MOBILE = _(
     "This API is exclusively designed for mobile users. Please access it using a mobile device to utilize its features."
@@ -89,9 +97,11 @@ PATIENT_DOCTOR_HOSPITAL_DIFFERENT = _(
 )
 APPOINTMENT_PAST_DATE = _("Appointment datetime cannot be in past.")
 APPOINTMENT_ALREADY_BOOKED = _("Appointment date is already booked.")
+DOCTOR_AND_PATIENTS_REQUIRED = _("Both doctor or patient required.")
 # Consultation
 OWN_APPOINTMENT_CONSULTATION_ONLY_ALLOWED = _(
     "Only own appointment consultation is allowed."
 )
 FOLLOW_UP_DATE_PAST = _("Follow up date cannot be in past.")
 DOCTOR_AI_CONSULTATION_PROMPT = "Act as expert doctor and provide consultation with following Subjective, Vitals, Assessment, and Plan details based on conversation with patient."  # donot add translation here
+

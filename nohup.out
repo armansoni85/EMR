@@ -2897,3 +2897,789 @@ System check identified 2 issues (0 silenced).
 [15/May/2025 10:01:02] "GET / HTTP/1.1" 404 4431
 [15/May/2025 10:01:02] code 400, message Bad request version ('À\x13À')
 [15/May/2025 10:01:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-17 18:20:53,454", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+System check identified some issues:
+
+WARNINGS:
+?: (ckeditor.W001) django-ckeditor bundles CKEditor 4.22.1 which isn't supported anmyore and which does have unfixed security issues, see for example https://ckeditor.com/cke4/release/CKEditor-4.24.0-LTS . You should consider strongly switching to a different editor (maybe CKEditor 5 respectively django-ckeditor-5 after checking whether the CKEditor 5 license terms work for you) or switch to the non-free CKEditor 4 LTS package. See https://ckeditor.com/ckeditor-4-support/ for more on this. (Note! This notice has been added by the django-ckeditor developers and we are not affiliated with CKSource and were not involved in the licensing change, so please refrain from complaining to us. Thanks.)
+?: (staticfiles.W004) The directory '/var/www/html/electronic_medical_report/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 2 issues (0 silenced).
+[17/May/2025 18:25:46] "OPTIONS /api/v1/users/login/ HTTP/1.1" 200 0
+[17/May/2025 18:25:47] "POST /api/v1/users/login/ HTTP/1.1" 200 687
+[17/May/2025 18:25:47] "OPTIONS /api/v1/users/profile/ HTTP/1.1" 200 0
+[17/May/2025 18:25:48] "GET /api/v1/users/profile/ HTTP/1.1" 200 595
+[17/May/2025 18:39:41,401] - Broken pipe from ('199.45.154.153', 50734)
+{"asctime": "2025-05-17 18:39:45,675", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[17/May/2025 18:39:45] "GET / HTTP/1.1" 404 4431
+[17/May/2025 18:39:45,950] - Broken pipe from ('199.45.154.153', 53878)
+{"asctime": "2025-05-17 18:39:49,381", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[17/May/2025 18:39:49] "GET / HTTP/1.1" 404 4431
+[17/May/2025 18:39:50] code 505, message Invalid HTTP version (2.0)
+[17/May/2025 18:39:50] "PRI * HTTP/2.0" 505 -
+{"asctime": "2025-05-17 18:39:54,164", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[17/May/2025 18:39:54] "GET /favicon.ico HTTP/1.1" 404 4482
+[17/May/2025 18:39:55] code 400, message Bad request version ('À\x14À')
+[17/May/2025 18:39:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-17 20:56:23,404", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[17/May/2025 20:56:23] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[17/May/2025 22:43:24] code 400, message Bad request syntax ('MGLNDD_51.20.181.176_8000')
+[17/May/2025 22:43:24] "MGLNDD_51.20.181.176_8000" 400 -
+[17/May/2025 23:25:19] code 400, message Bad request version ('À\x14À')
+[17/May/2025 23:25:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[17/May/2025 23:25:20] code 400, message Bad request version ('À\x14À')
+[17/May/2025 23:25:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-17 23:25:20,529", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[17/May/2025 23:25:20] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-17 23:25:21,018", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/login'>"}
+[17/May/2025 23:25:21] "GET /login HTTP/1.1" 404 4464
+{"asctime": "2025-05-17 23:30:39,204", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[17/May/2025 23:30:39] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-18 00:51:40,252", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 00:51:40] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-18 02:42:41,708", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 02:42:41] "GET / HTTP/1.1" 404 4431
+[18/May/2025 02:42:45,072] - Broken pipe from ('147.185.132.225', 62336)
+[18/May/2025 03:08:18,981] - Broken pipe from ('199.45.155.111', 58404)
+{"asctime": "2025-05-18 03:08:22,272", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 03:08:22] "GET / HTTP/1.1" 404 4431
+[18/May/2025 03:08:22,530] - Broken pipe from ('199.45.155.111', 58476)
+{"asctime": "2025-05-18 03:08:25,883", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 03:08:25] "GET / HTTP/1.1" 404 4431
+[18/May/2025 03:08:26] code 505, message Invalid HTTP version (2.0)
+[18/May/2025 03:08:26] "PRI * HTTP/2.0" 505 -
+{"asctime": "2025-05-18 03:08:31,518", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[18/May/2025 03:08:31] "GET /favicon.ico HTTP/1.1" 404 4482
+[18/May/2025 03:08:32] code 400, message Bad request version ('À\x14À')
+[18/May/2025 03:08:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2025 05:04:56] code 400, message Bad HTTP/0.9 request type ('Z¥\x01')
+[18/May/2025 05:04:56] "Z¥     " 400 -
+[18/May/2025 06:16:50] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ämaÊ¯]\xadÉÏûÇ=Q÷_Áþ\x1b\x104\x98³Ú\x99Ü\x9e\x1a{\x87iè<\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[18/May/2025 06:16:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2025 06:16:50] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x8eøÕ\x069\x95G\x1aÿÉ<\xadÂÏyôÙC:\xad\x99\x80t\x00ý<gkÛv\x8bà\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[18/May/2025 06:16:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-18 06:16:51,283", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 06:16:51] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-18 06:16:51,779", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/login'>"}
+[18/May/2025 06:16:51] "GET /login HTTP/1.1" 404 4464
+{"asctime": "2025-05-18 07:08:11,038", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[18/May/2025 07:08:11] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[18/May/2025 07:31:28] code 400, message Bad request syntax ('JDWP-Handshake')
+[18/May/2025 07:31:28] "JDWP-Handshake" 400 -
+{"asctime": "2025-05-18 09:05:19,250", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 09:05:19] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-18 11:30:02,895", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 11:30:02] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-18 11:32:14,673", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 11:32:14] "GET / HTTP/1.1" 404 4431
+[18/May/2025 11:34:28] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03"\x96OI·O4\x0f2àåõ>\x16o\x05ì¦t\x8er÷Â\x17òü³øã»\x03à\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[18/May/2025 11:34:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2025 11:36:24] code 400, message Bad request syntax ('SSH-2.0-Go')
+[18/May/2025 11:36:24] "SSH-2.0-Go" 400 -
+[18/May/2025 11:43:06,685] - Broken pipe from ('45.79.115.134', 50201)
+{"asctime": "2025-05-18 11:43:06,917", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 11:43:06] "GET / HTTP/1.1" 404 4426
+[18/May/2025 11:43:07,160] - Broken pipe from ('45.79.115.134', 50202)
+{"asctime": "2025-05-18 12:11:35,899", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[18/May/2025 12:11:35] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-18 13:59:37,972", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 13:59:37] "GET / HTTP/1.0" 404 4462
+{"asctime": "2025-05-18 13:59:38,193", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 13:59:38] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-18 13:59:38,416", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[18/May/2025 13:59:38] "GET /favicon.ico HTTP/1.1" 404 4482
+{"asctime": "2025-05-18 14:39:37,280", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[18/May/2025 14:39:37] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-18 17:12:13,584", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[18/May/2025 17:12:13] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-18 17:56:11,237", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "", "exc_text": null, "ref": "Exception caught in common exception handler", "exception": "User Not Found", "traceback": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 506, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/user/views.py\", line 90, in create\n    raise APIException(_(\"User Not Found\"), code=status.HTTP_404_NOT_FOUND)\nrest_framework.exceptions.APIException: User Not Found\n", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 506, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/user/views.py\", line 90, in create\n    raise APIException(_(\"User Not Found\"), code=status.HTTP_404_NOT_FOUND)\nrest_framework.exceptions.APIException: User Not Found", "taskName": null}
+{"asctime": "2025-05-18 17:56:11,238", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/users/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/users/login/'>"}
+[18/May/2025 17:56:11] "POST /api/v1/users/login/ HTTP/1.1" 404 55
+{"asctime": "2025-05-18 19:39:47,853", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[18/May/2025 19:39:47] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[18/May/2025 20:08:01] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03¶\x88(9Qça¯p\x8cK\x04¿orai\x05X£>®\x91i\x82¯ËPÕ\x15JM\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[18/May/2025 20:08:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2025 21:18:32] code 400, message Bad request version ('À\x14À')
+[18/May/2025 21:18:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2025 21:18:32] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03qi±²\x9a¼Ñä0#\x01;¹@nÒBÓÔã\x07®¾LkØD)ZxÑ\x03\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[18/May/2025 21:18:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-18 21:18:32,798", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[18/May/2025 21:18:32] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-18 21:18:33,137", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/login'>"}
+[18/May/2025 21:18:33] "GET /login HTTP/1.1" 404 4464
+{"asctime": "2025-05-19 01:12:12,101", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/google.com:443'>"}
+[19/May/2025 01:12:12] "CONNECT google.com:443 HTTP/1.1" 404 1846
+[19/May/2025 01:17:51] code 400, message Bad request syntax ('JDWP-Handshake')
+[19/May/2025 01:17:51] "JDWP-Handshake" 400 -
+{"asctime": "2025-05-19 03:13:59,933", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[19/May/2025 03:13:59] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-19 05:53:01,318", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[19/May/2025 05:53:01] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[19/May/2025 06:12:45] code 400, message Bad request version ('À#À¬À®À+À')
+[19/May/2025 06:12:45] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-19 06:12:48,828", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 06:12:48] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-19 06:26:07,130", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[19/May/2025 06:26:07] "GET /favicon.ico HTTP/1.1" 404 4482
+[19/May/2025 06:46:35] code 400, message Bad request version ('\x00\x9eÌ¨Ìª\x003\x00=\x00\x16À')
+[19/May/2025 06:46:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-19 06:46:46,477", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 06:46:46] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-19 06:47:05,159", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[19/May/2025 06:47:05] "GET /favicon.ico HTTP/1.1" 404 4482
+{"asctime": "2025-05-19 06:47:05,831", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /robots.txt", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/robots.txt'>"}
+[19/May/2025 06:47:05] "GET /robots.txt HTTP/1.1" 404 4479
+{"asctime": "2025-05-19 06:47:06,511", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /sitemap.xml", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/sitemap.xml'>"}
+[19/May/2025 06:47:06] "GET /sitemap.xml HTTP/1.1" 404 4482
+{"asctime": "2025-05-19 07:35:32,664", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /portal", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/portal'>"}
+[19/May/2025 07:35:32] "POST /portal HTTP/1.1" 404 4468
+{"asctime": "2025-05-19 08:20:04,215", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 08:20:04] "GET / HTTP/1.1" 404 4426
+{"asctime": "2025-05-19 08:20:04,534", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[19/May/2025 08:20:04] "GET /favicon.ico HTTP/1.1" 404 4477
+{"asctime": "2025-05-19 08:26:07,770", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[19/May/2025 08:26:07] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-19 09:20:10,786", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /aaa9", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/aaa9'>"}
+[19/May/2025 09:20:10] "GET /aaa9 HTTP/1.1" 404 4461
+{"asctime": "2025-05-19 09:20:11,152", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /aab8", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/aab8'>"}
+[19/May/2025 09:20:11] "GET /aab8 HTTP/1.1" 404 4461
+{"asctime": "2025-05-19 09:20:11,511", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 09:20:11] "GET / HTTP/1.1" 404 4431
+[19/May/2025 10:14:22] code 400, message Bad request syntax ('JDWP-Handshake')
+[19/May/2025 10:14:22] "JDWP-Handshake" 400 -
+[19/May/2025 11:19:20] "OPTIONS /api/v1/users/login/ HTTP/1.1" 200 0
+[19/May/2025 11:19:22] "POST /api/v1/users/login/ HTTP/1.1" 200 687
+[19/May/2025 11:19:22] "OPTIONS /api/v1/users/profile/ HTTP/1.1" 200 0
+[19/May/2025 11:19:23] "GET /api/v1/users/profile/ HTTP/1.1" 200 595
+[19/May/2025 11:47:12] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x10\x04\x00(Á\x00\x00\x00\x00\x0f\x02\x00')
+[19/May/2025 11:47:12] "   TZ          (Á     " 400 -
+[19/May/2025 12:25:49] code 400, message Bad request syntax ('nil')
+[19/May/2025 12:25:49] "nil" 400 -
+{"asctime": "2025-05-19 12:25:50,058", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 12:25:50] "GET / HTTP/1.0" 404 4426
+{"asctime": "2025-05-19 12:25:50,435", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 12:25:50] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-19 12:25:50,835", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[19/May/2025 12:25:50] "GET /favicon.ico HTTP/1.1" 404 4482
+{"asctime": "2025-05-19 12:26:00,932", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 12:26:00] "GET / HTTP/1.1" 404 4431
+[19/May/2025 13:01:23] code 400, message Bad request version ('A¶8a\x96¾cö+,ÀúC\x8b/d²ùárzg)')
+[19/May/2025 13:01:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[19/May/2025 13:22:40] code 400, message Bad request syntax ('MGLNDD_51.20.181.176_8000')
+[19/May/2025 13:22:40] "MGLNDD_51.20.181.176_8000" 400 -
+{"asctime": "2025-05-19 13:34:14,651", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 13:34:14] "GET / HTTP/1.1" 404 4431
+[19/May/2025 13:34:17,883] - Broken pipe from ('205.210.31.235', 60966)
+{"asctime": "2025-05-19 15:39:30,030", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[19/May/2025 15:39:30] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[19/May/2025 16:21:59] code 400, message Bad request version ('À\x14À')
+[19/May/2025 16:21:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[19/May/2025 16:22:00] code 400, message Bad request version ('À\x14À')
+[19/May/2025 16:22:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-19 16:22:00,357", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 16:22:00] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-19 16:22:00,666", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/login'>"}
+[19/May/2025 16:22:00] "GET /login HTTP/1.1" 404 4464
+{"asctime": "2025-05-19 16:28:01,416", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 16:28:01] "GET / HTTP/1.0" 404 4426
+{"asctime": "2025-05-19 17:01:52,492", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 17:01:52] "GET / HTTP/1.1" 404 4431
+[19/May/2025 17:01:56] code 505, message Invalid HTTP version (2.0)
+[19/May/2025 17:01:56] "PRI * HTTP/2.0" 505 -
+{"asctime": "2025-05-19 17:02:51,262", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[19/May/2025 17:02:51] "GET /favicon.ico HTTP/1.1" 404 4482
+[19/May/2025 17:02:56] code 400, message Bad request version (':')
+[19/May/2025 17:02:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-19 19:54:48,636", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 19:54:48] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-19 20:45:52,250", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[19/May/2025 20:45:52] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-19 21:41:01,351", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[19/May/2025 21:41:01] "GET / HTTP/1.1" 404 4431
+[19/May/2025 22:33:30] code 400, message Bad request version ('À\x14À')
+[19/May/2025 22:33:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-20 02:30:08,744", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 02:30:08] "GET / HTTP/1.1" 404 4431
+[20/May/2025 02:30:12,019] - Broken pipe from ('198.235.24.75', 61376)
+[20/May/2025 04:28:28] code 400, message Bad HTTP/0.9 request type ('\\x01\\x00\\x00\\x00')
+[20/May/2025 04:28:28] "\x01\x00\x00\x00 \xbf\x02\x00\x88\x13\x00\x00\x87\x00\x00\x00NIMABIJIAN\x04\x03\x00\x00{\x99Caig\x9c\x03\xc7eB\xc5\t\xc1\x18a\x11\x1a\x91\x1f\x02\tcof\x91\xc0\x80sJ5\xd2\x80\xe6\x9a~\xb9\xc7\x83^\x96\xeeN\x16\x96\x96&\xe6\x03\xea\xbc\x81\x02=\xac\x10\xfa?7\x03\xc3\xdf\xf7\xe4\x98`p\xe6\x8d\xc1\xa9\x8d\xc6\x06\xdb\xaf\x91\xe7\x82s\xf7\x14H\xd4\xe1W\x9a\x93C\x9e]\xa4\x01#\x03#\x03]\x03c]CC\x05C\x03+S\x03b\xf4\x00\x00/\x9e\x16E" 400 -
+[20/May/2025 07:48:59] code 400, message Bad request version ('À#À¬À®À+À')
+[20/May/2025 07:48:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-20 07:49:03,270", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 07:49:03] "GET / HTTP/1.1" 404 4431
+[20/May/2025 08:19:11] code 400, message Bad request version ('À\x14À')
+[20/May/2025 08:19:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[20/May/2025 08:25:42] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x91Åj§\x9fEñ»ß£ß\x8e\x06Ï÷XógåÑ±R¤óÈõ¡Sß\x01¬\x18\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[20/May/2025 08:25:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-20 11:14:31,372", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 11:14:31] "GET / HTTP/1.1" 404 4426
+[20/May/2025 11:14:32,053] - Broken pipe from ('165.154.41.201', 45822)
+[20/May/2025 11:14:32] code 400, message Bad request version ('À\x13À')
+[20/May/2025 11:14:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[20/May/2025 11:14:32] code 400, message Bad HTTP/0.9 request type ('t3')
+[20/May/2025 11:14:32] "t3 12.1.2" 400 -
+{"asctime": "2025-05-20 11:15:02,921", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 11:15:02] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-20 11:15:03,255", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[20/May/2025 11:15:03] "GET /favicon.ico HTTP/1.1" 404 4482
+{"asctime": "2025-05-20 11:15:03,549", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /sitemap.xml", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/sitemap.xml'>"}
+[20/May/2025 11:15:03] "GET /sitemap.xml HTTP/1.1" 404 4482
+{"asctime": "2025-05-20 11:15:03,602", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /robots.txt", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/robots.txt'>"}
+[20/May/2025 11:15:03] "GET /robots.txt HTTP/1.1" 404 4479
+[20/May/2025 11:48:49] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ª:¹óÄ\x10Û¼UÆÜê¬ÿ\x0fwü¾\x1bë\x02\x1b_tx{dpÐX_§\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[20/May/2025 11:48:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[20/May/2025 11:48:49] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x037Öª')
+[20/May/2025 11:48:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-20 11:48:49,822", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 11:48:49] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-20 11:48:50,140", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/login'>"}
+[20/May/2025 11:48:50] "GET /login HTTP/1.1" 404 4464
+{"asctime": "2025-05-20 13:39:49,561", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 13:39:49] "GET / HTTP/1.1" 404 4431
+[20/May/2025 13:39:55,304] - Broken pipe from ('147.185.132.79', 63796)
+{"asctime": "2025-05-20 14:36:54,990", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[20/May/2025 14:36:54] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[20/May/2025 15:41:54] code 400, message Bad request syntax ('\x01\x01æ')
+[20/May/2025 15:41:54] "æ" 400 -
+{"asctime": "2025-05-20 16:53:01,449", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[20/May/2025 16:53:01] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-20 16:59:52,790", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 16:59:52] "GET / HTTP/1.0" 404 4426
+{"asctime": "2025-05-20 18:24:33,989", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 18:24:33] "GET / HTTP/1.1" 404 4426
+{"asctime": "2025-05-20 18:24:34,109", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[20/May/2025 18:24:34] "GET /favicon.ico HTTP/1.1" 404 4477
+{"asctime": "2025-05-20 19:21:04,818", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[20/May/2025 19:21:04] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-20 19:43:08,763", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[20/May/2025 19:43:08] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-20 21:55:46,762", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[20/May/2025 21:55:46] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[21/May/2025 01:41:08] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Ü\x92µ')
+[21/May/2025 01:41:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-21 02:02:35,320", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 02:02:35] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-21 02:24:12,236", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 02:24:12] "GET / HTTP/1.1" 404 4431
+[21/May/2025 02:27:32] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x98\x9fU%>Ä¹\x1atÀ}Ë\x10\\\x14\x02\xadv\x96¥U¢6i\x84[L\x98ó\x95\x82l\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[21/May/2025 02:27:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/May/2025 02:28:34] code 400, message Bad request syntax ('SSH-2.0-Go')
+[21/May/2025 02:28:34] "SSH-2.0-Go" 400 -
+[21/May/2025 02:28:49] code 400, message Bad request version ('À\x14À')
+[21/May/2025 02:28:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-21 02:57:44,951", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[21/May/2025 02:57:44] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[21/May/2025 03:13:17] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03c=ÿæ\x84\x07\x05vp¯2ô-æ±\x82¨.X²$½\x00Üñ\x97Ó´`\x10G,\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[21/May/2025 03:13:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/May/2025 03:13:18] code 400, message Bad request version ('À\x14À')
+[21/May/2025 03:13:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-21 03:13:18,535", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 03:13:18] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-21 03:13:19,121", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/login'>"}
+[21/May/2025 03:13:19] "GET /login HTTP/1.1" 404 4464
+{"asctime": "2025-05-21 03:17:23,955", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 03:17:23] "GET / HTTP/1.1" 404 4431
+[21/May/2025 03:17:26] code 505, message Invalid HTTP version (2.0)
+[21/May/2025 03:17:26] "PRI * HTTP/2.0" 505 -
+{"asctime": "2025-05-21 03:17:50,189", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[21/May/2025 03:17:50] "GET /favicon.ico HTTP/1.1" 404 4482
+[21/May/2025 03:17:51] code 400, message Bad request version ('À\x14À')
+[21/May/2025 03:17:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/May/2025 05:06:09] code 400, message Bad request syntax ('MGLNDD_51.20.181.176_8000')
+[21/May/2025 05:06:09] "MGLNDD_51.20.181.176_8000" 400 -
+[21/May/2025 07:25:11] code 400, message Bad request version ('À\x14À')
+[21/May/2025 07:25:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/May/2025 07:25:12] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03aº°\x86\x17DÎ÷\x9cÝ¨\x144\x94°2!TZ\x92\x90\x99Úéô\x9cöÁ^PFË\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[21/May/2025 07:25:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+{"asctime": "2025-05-21 07:25:12,345", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 07:25:12] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-21 07:25:12,657", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/login'>"}
+[21/May/2025 07:25:12] "GET /login HTTP/1.1" 404 4464
+{"asctime": "2025-05-21 08:00:05,438", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[21/May/2025 08:00:05] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+[21/May/2025 09:34:28] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[21/May/2025 09:34:28] "    c                           " 400 -
+{"asctime": "2025-05-21 10:48:33,052", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 10:48:33] "GET / HTTP/1.1" 404 4431
+[21/May/2025 11:34:46] "OPTIONS /api/v1/users/login/ HTTP/1.1" 200 0
+[21/May/2025 11:34:47] "POST /api/v1/users/login/ HTTP/1.1" 200 687
+[21/May/2025 11:34:47] "OPTIONS /api/v1/users/profile/ HTTP/1.1" 200 0
+[21/May/2025 11:34:48] "GET /api/v1/users/profile/ HTTP/1.1" 200 595
+[21/May/2025 12:49:00] code 400, message Bad request syntax ('nil')
+[21/May/2025 12:49:00] "nil" 400 -
+{"asctime": "2025-05-21 12:49:00,797", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 12:49:00] "GET / HTTP/1.0" 404 4426
+{"asctime": "2025-05-21 12:49:01,198", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 12:49:01] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-21 12:49:01,574", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[21/May/2025 12:49:01] "GET /favicon.ico HTTP/1.1" 404 4482
+{"asctime": "2025-05-21 13:25:30,088", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[21/May/2025 13:25:30] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-21 13:38:59,914", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 13:38:59] "GET / HTTP/1.1" 404 4431
+[21/May/2025 13:39:04,313] - Broken pipe from ('205.210.31.89', 64254)
+{"asctime": "2025-05-21 13:54:19,812", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /www.google.com:443", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: CONNECT '/www.google.com:443'>"}
+[21/May/2025 13:54:19] "CONNECT www.google.com:443 HTTP/1.1" 404 1862
+{"asctime": "2025-05-21 14:46:01,639", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 14:46:01] "GET / HTTP/1.1" 404 4431
+{"asctime": "2025-05-21 17:10:16,160", "module": "autoreload", "funcName": "trigger_reload", "name": "django.utils.autoreload", "levelname": "INFO", "message": "/var/www/html/electronic_medical_report/emr/base_settings.py changed, reloading.", "exc_text": null, "taskName": null}
+[33m ................ [0m 
+[33m ................ [0m 
+[91m [1m Please make super admin during initial setup [0m 
+[33m ................ [0m 
+[33m ................ [0m 
+Performing system checks...
+
+May 17, 2025 - 18:20:54
+Django version 5.1.3, using settings 'emr.dev_settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+{"asctime": "2025-05-21 17:10:19,140", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+System check identified some issues:
+
+WARNINGS:
+?: (ckeditor.W001) django-ckeditor bundles CKEditor 4.22.1 which isn't supported anmyore and which does have unfixed security issues, see for example https://ckeditor.com/cke4/release/CKEditor-4.24.0-LTS . You should consider strongly switching to a different editor (maybe CKEditor 5 respectively django-ckeditor-5 after checking whether the CKEditor 5 license terms work for you) or switch to the non-free CKEditor 4 LTS package. See https://ckeditor.com/ckeditor-4-support/ for more on this. (Note! This notice has been added by the django-ckeditor developers and we are not affiliated with CKSource and were not involved in the licensing change, so please refrain from complaining to us. Thanks.)
+?: (staticfiles.W004) The directory '/var/www/html/electronic_medical_report/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 2 issues (0 silenced).
+{"asctime": "2025-05-21 17:11:19,864", "module": "autoreload", "funcName": "trigger_reload", "name": "django.utils.autoreload", "levelname": "INFO", "message": "/var/www/html/electronic_medical_report/emr/urls.py changed, reloading.", "exc_text": null, "taskName": null}
+[33m ................ [0m 
+[33m ................ [0m 
+[91m [1m Please make super admin during initial setup [0m 
+[33m ................ [0m 
+[33m ................ [0m 
+Performing system checks...
+
+May 21, 2025 - 17:10:21
+Django version 5.1.3, using settings 'emr.dev_settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+{"asctime": "2025-05-21 17:11:21,284", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/html/electronic_medical_report/emr/urls.py", line 80, in <module>
+    path("api/v1", include("prescriptions.urls")),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'prescriptions'
+{"asctime": "2025-05-21 17:59:05,444", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+System check identified some issues:
+
+WARNINGS:
+?: (ckeditor.W001) django-ckeditor bundles CKEditor 4.22.1 which isn't supported anmyore and which does have unfixed security issues, see for example https://ckeditor.com/cke4/release/CKEditor-4.24.0-LTS . You should consider strongly switching to a different editor (maybe CKEditor 5 respectively django-ckeditor-5 after checking whether the CKEditor 5 license terms work for you) or switch to the non-free CKEditor 4 LTS package. See https://ckeditor.com/ckeditor-4-support/ for more on this. (Note! This notice has been added by the django-ckeditor developers and we are not affiliated with CKSource and were not involved in the licensing change, so please refrain from complaining to us. Thanks.)
+?: (staticfiles.W004) The directory '/var/www/html/electronic_medical_report/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 2 issues (0 silenced).
+{"asctime": "2025-05-21 17:59:56,023", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+System check identified some issues:
+
+WARNINGS:
+?: (ckeditor.W001) django-ckeditor bundles CKEditor 4.22.1 which isn't supported anmyore and which does have unfixed security issues, see for example https://ckeditor.com/cke4/release/CKEditor-4.24.0-LTS . You should consider strongly switching to a different editor (maybe CKEditor 5 respectively django-ckeditor-5 after checking whether the CKEditor 5 license terms work for you) or switch to the non-free CKEditor 4 LTS package. See https://ckeditor.com/ckeditor-4-support/ for more on this. (Note! This notice has been added by the django-ckeditor developers and we are not affiliated with CKSource and were not involved in the licensing change, so please refrain from complaining to us. Thanks.)
+?: (staticfiles.W004) The directory '/var/www/html/electronic_medical_report/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 2 issues (0 silenced).
+{"asctime": "2025-05-21 18:00:55,594", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 18:00:55] "GET / HTTP/1.1" 404 4580
+{"asctime": "2025-05-21 18:00:57,313", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[21/May/2025 18:00:57] "GET /favicon.ico HTTP/1.1" 404 4631
+[21/May/2025 18:01:03] "GET /admin HTTP/1.1" 301 0
+[21/May/2025 18:01:04] "GET /admin/ HTTP/1.1" 302 0
+[21/May/2025 18:01:04] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4265
+[21/May/2025 18:01:05] "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[21/May/2025 18:01:05] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[21/May/2025 18:01:06] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[21/May/2025 18:01:06] "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[21/May/2025 18:01:06] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[21/May/2025 18:01:06] "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[21/May/2025 18:01:07] code 400, message Bad request syntax ('SSH-2.0-Go')
+[21/May/2025 18:01:07] "SSH-2.0-Go" 400 -
+[21/May/2025 18:01:07] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[21/May/2025 18:01:30] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[21/May/2025 18:01:31] "GET /admin/ HTTP/1.1" 200 16993
+[21/May/2025 18:01:31] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[21/May/2025 18:01:32] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[21/May/2025 18:01:32] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[21/May/2025 18:01:32] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[21/May/2025 18:01:56] code 400, message Bad request version ('À\x14À')
+[21/May/2025 18:01:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/May/2025 18:02:02] "GET /admin/user/customuser/add/ HTTP/1.1" 200 31972
+[21/May/2025 18:02:02] "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+[21/May/2025 18:02:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:02:03] "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+[21/May/2025 18:02:03] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[21/May/2025 18:02:03] "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[21/May/2025 18:02:03] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+[21/May/2025 18:02:03] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[21/May/2025 18:02:03] "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[21/May/2025 18:02:04] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+[21/May/2025 18:02:04] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[21/May/2025 18:02:04] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[21/May/2025 18:02:04] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[21/May/2025 18:02:04] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[21/May/2025 18:02:04] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[21/May/2025 18:02:05] "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+[21/May/2025 18:03:25] "POST /admin/user/customuser/add/ HTTP/1.1" 302 0
+[21/May/2025 18:03:26] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 200 44524
+[21/May/2025 18:03:26] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[21/May/2025 18:03:26] "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+[21/May/2025 18:03:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:03:26] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[21/May/2025 18:03:27] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[21/May/2025 18:03:27] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[21/May/2025 18:03:31] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/password/ HTTP/1.1" 200 16954
+[21/May/2025 18:04:10] "POST /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/password/ HTTP/1.1" 200 17127
+[21/May/2025 18:04:41] "POST /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/password/ HTTP/1.1" 302 0
+[21/May/2025 18:04:41] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 200 44610
+[21/May/2025 18:04:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:05:05] "POST /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 302 0
+[21/May/2025 18:05:05] "GET /admin/user/customuser/ HTTP/1.1" 200 23852
+[21/May/2025 18:05:06] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[21/May/2025 18:05:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:05:06] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[21/May/2025 18:05:06] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[21/May/2025 18:05:06] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[21/May/2025 18:05:06] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[21/May/2025 18:05:06] "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[21/May/2025 18:05:13] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 200 44474
+[21/May/2025 18:05:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:05:49] "POST /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 302 0
+[21/May/2025 18:05:50] "GET /admin/user/customuser/ HTTP/1.1" 200 23852
+[21/May/2025 18:05:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:07:06] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 200 44474
+[21/May/2025 18:07:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:07:19] "GET /admin/user/customuser/ HTTP/1.1" 200 23598
+{"asctime": "2025-05-21 18:07:24,937", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/login'>"}
+[21/May/2025 18:07:24] "GET /login HTTP/1.1" 404 4613
+{"asctime": "2025-05-21 18:07:39,741", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/vi/login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/vi/login'>"}
+[21/May/2025 18:07:39] "GET /api/vi/login HTTP/1.1" 404 4634
+{"asctime": "2025-05-21 18:08:00,576", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/vi/users", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/vi/users'>"}
+[21/May/2025 18:08:00] "GET /api/vi/users HTTP/1.1" 404 4634
+{"asctime": "2025-05-21 18:13:31,751", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/'>"}
+[21/May/2025 18:13:31] "GET /api/ HTTP/1.1" 404 4610
+{"asctime": "2025-05-21 18:13:47,838", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "", "exc_text": null, "ref": "Exception caught in common exception handler", "exception": "Authentication credentials were not provided.", "traceback": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/user/views.py\", line 384, in initial\n    return super().initial(request, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 88, in initial\n    self.check_permissions(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 333, in check_permissions\n    self.permission_denied(\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 174, in permission_denied\n    raise exceptions.NotAuthenticated()\nrest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.\n", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/user/views.py\", line 384, in initial\n    return super().initial(request, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 88, in initial\n    self.check_permissions(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 333, in check_permissions\n    self.permission_denied(\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 174, in permission_denied\n    raise exceptions.NotAuthenticated()\nrest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.", "taskName": null}
+{"asctime": "2025-05-21 18:13:47,839", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Unauthorized: /api/v1/users/", "exc_text": null, "taskName": null, "status_code": 401, "request": "<WSGIRequest: GET '/api/v1/users/'>"}
+[21/May/2025 18:13:47] "GET /api/v1/users/ HTTP/1.1" 401 102
+{"asctime": "2025-05-21 18:13:55,806", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/v1/login/'>"}
+[21/May/2025 18:13:55] "GET /api/v1/login/ HTTP/1.1" 404 6802
+[21/May/2025 18:35:37] "GET /admin/ HTTP/1.1" 200 18633
+[21/May/2025 18:36:03] "GET /admin/user/customuser/ HTTP/1.1" 200 23598
+[21/May/2025 18:36:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:36:07] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 200 44474
+[21/May/2025 18:36:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:36:31] "GET /admin/user/customuser/ HTTP/1.1" 200 23598
+[21/May/2025 18:36:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:36:51] "GET /admin/user/customuser/a5f46094-807c-4d0b-abe3-dff2542228af/change/ HTTP/1.1" 200 44524
+[21/May/2025 18:36:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:36:58] "GET /admin/user/customuser/ HTTP/1.1" 200 23598
+[21/May/2025 18:37:11] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 200 44474
+[21/May/2025 18:37:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:37:14] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/history/ HTTP/1.1" 200 15206
+[21/May/2025 18:37:20] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 200 44474
+[21/May/2025 18:37:54] "GET /admin/employee/certification/ HTTP/1.1" 200 15423
+[21/May/2025 18:37:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:37:57] "GET /admin/api_log/apirequestlog/ HTTP/1.1" 200 17313
+[21/May/2025 18:38:00] "GET /admin/user/customuser/ HTTP/1.1" 200 23598
+[21/May/2025 18:38:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:38:07] "GET /admin/user/userpermission/ HTTP/1.1" 200 16610
+[21/May/2025 18:38:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:38:15] "GET /admin/user/devicetoken/ HTTP/1.1" 200 15558
+[21/May/2025 18:38:18] "GET /admin/user/customuser/ HTTP/1.1" 200 23598
+[21/May/2025 18:38:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:38:27] "GET /admin/user/customuser/add/ HTTP/1.1" 200 31972
+[21/May/2025 18:38:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:38:39] "GET /admin/employee/certification/ HTTP/1.1" 200 15423
+[21/May/2025 18:38:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:38:48] "GET /admin/user/customuser/ HTTP/1.1" 200 23598
+[21/May/2025 18:38:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:38:59] "GET /admin/consultation/consultation/add/ HTTP/1.1" 200 21935
+[21/May/2025 18:39:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:39:04] "GET /admin/hospital/hospital/add/ HTTP/1.1" 200 44828
+[21/May/2025 18:39:04] "GET /static/ckeditor/ckeditor.css HTTP/1.1" 200 672
+[21/May/2025 18:39:05] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 1526
+[21/May/2025 18:39:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:39:06] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 759716
+[21/May/2025 18:39:07] "GET /static/ckeditor/ckeditor/config.js?t=N5UC HTTP/1.1" 200 336
+[21/May/2025 18:39:07] "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=N5UC HTTP/1.1" 200 48309
+[21/May/2025 18:39:08] "GET /static/ckeditor/ckeditor/lang/en.js?t=N5UC HTTP/1.1" 200 18228
+[21/May/2025 18:39:08] "GET /static/ckeditor/ckeditor/styles.js?t=N5UC HTTP/1.1" 200 5577
+[21/May/2025 18:39:09] "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=N5UC HTTP/1.1" 200 419
+[21/May/2025 18:39:09] "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=N5UC HTTP/1.1" 200 381
+[21/May/2025 18:39:09] "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css?t=N5UC HTTP/1.1" 200 1145
+[21/May/2025 18:39:10] "GET /static/ckeditor/ckeditor/contents.css?t=N5UC HTTP/1.1" 200 3092
+[21/May/2025 18:39:10] "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css?t=N5UC HTTP/1.1" 200 249
+[21/May/2025 18:39:10] "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=4a1fb11f44 HTTP/1.1" 200 12237
+[21/May/2025 18:39:10] "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css?t=N5UC HTTP/1.1" 200 1511
+[21/May/2025 18:39:18] "GET /admin/user/customuser/add/ HTTP/1.1" 200 31972
+[21/May/2025 18:39:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:39:28] "POST /admin/user/customuser/add/ HTTP/1.1" 200 32135
+[21/May/2025 18:39:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:39:31] "POST /admin/user/customuser/add/ HTTP/1.1" 200 32135
+[21/May/2025 18:39:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:39:44] "POST /admin/user/customuser/add/ HTTP/1.1" 200 32159
+[21/May/2025 18:39:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:39:52] "POST /admin/user/customuser/add/ HTTP/1.1" 302 0
+[21/May/2025 18:39:53] "GET /admin/user/customuser/add/ HTTP/1.1" 200 32257
+[21/May/2025 18:39:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:40:09] "GET /admin/user/customuser/ HTTP/1.1" 200 24183
+[21/May/2025 18:40:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:40:20] "GET /admin/user/customuser/e84ca41f-a29c-4156-9540-aff00ed3465a/change/ HTTP/1.1" 200 44190
+[21/May/2025 18:40:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:40:25] "GET /admin/user/customuser/e84ca41f-a29c-4156-9540-aff00ed3465a/delete/ HTTP/1.1" 200 15421
+[21/May/2025 18:40:26] "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+[21/May/2025 18:40:28] "POST /admin/user/customuser/e84ca41f-a29c-4156-9540-aff00ed3465a/delete/ HTTP/1.1" 302 0
+[21/May/2025 18:40:29] "GET /admin/user/customuser/ HTTP/1.1" 200 23764
+[21/May/2025 18:40:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:40:37] "GET /admin/user/customuser/db0a9534-d52a-4a49-b49d-a899db467cc3/change/ HTTP/1.1" 200 44474
+[21/May/2025 18:40:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+{"asctime": "2025-05-21 18:48:45,631", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /ap/v1/hospitals/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/ap/v1/hospitals/'>"}
+[21/May/2025 18:48:45] "POST /ap/v1/hospitals/ HTTP/1.1" 404 4647
+{"asctime": "2025-05-21 18:49:10,289", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 18:49:10] "GET / HTTP/1.1" 404 4580
+[21/May/2025 18:49:19] "GET /swagger HTTP/1.1" 301 0
+[21/May/2025 18:49:20] "GET /swagger/ HTTP/1.1" 200 1627
+[21/May/2025 18:49:20] "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+[21/May/2025 18:49:22] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+[21/May/2025 18:49:22] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+[21/May/2025 18:49:22] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+[21/May/2025 18:49:22] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+[21/May/2025 18:49:24] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+[21/May/2025 18:49:24] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+{"asctime": "2025-05-21 18:50:06,315", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/'>"}
+[21/May/2025 18:50:06] "GET / HTTP/1.1" 404 4580
+{"asctime": "2025-05-21 18:51:13,824", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/v1/login'>"}
+[21/May/2025 18:51:13] "GET /api/v1/login HTTP/1.1" 404 6799
+{"asctime": "2025-05-21 18:51:18,318", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/v1/login/'>"}
+[21/May/2025 18:51:18] "GET /api/v1/login/ HTTP/1.1" 404 6802
+{"asctime": "2025-05-21 18:51:23,527", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/v1/login/'>"}
+[21/May/2025 18:51:23] "GET /api/v1/login/ HTTP/1.1" 404 6802
+{"asctime": "2025-05-21 18:51:36,866", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/users/login", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/users/login'>"}
+[21/May/2025 18:51:36] "GET /api/users/login HTTP/1.1" 404 4643
+{"asctime": "2025-05-21 18:52:10,051", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "", "exc_text": null, "ref": "Exception caught in common exception handler", "exception": "Method \"GET\" not allowed.", "traceback": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 506, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 167, in http_method_not_allowed\n    raise exceptions.MethodNotAllowed(request.method)\nrest_framework.exceptions.MethodNotAllowed: Method \"GET\" not allowed.\n", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 506, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 167, in http_method_not_allowed\n    raise exceptions.MethodNotAllowed(request.method)\nrest_framework.exceptions.MethodNotAllowed: Method \"GET\" not allowed.", "taskName": null}
+{"asctime": "2025-05-21 18:52:10,051", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "Method \"GET\" not allowed.", "exc_text": null, "code": "method_not_allowed", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 506, in dispatch\n    response = handler(request, *args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 167, in http_method_not_allowed\n    raise exceptions.MethodNotAllowed(request.method)\nrest_framework.exceptions.MethodNotAllowed: Method \"GET\" not allowed.", "taskName": null}
+{"asctime": "2025-05-21 18:52:10,052", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Method Not Allowed: /api/v1/users/login/", "exc_text": null, "taskName": null, "status_code": 405, "request": "<WSGIRequest: GET '/api/v1/users/login/'>"}
+[21/May/2025 18:52:10] "GET /api/v1/users/login/ HTTP/1.1" 405 85
+[21/May/2025 18:55:31] "POST /api/v1/users/login/ HTTP/1.1" 200 689
+[21/May/2025 18:56:42] "GET /api/v1/users/profile HTTP/1.1" 301 0
+[21/May/2025 18:56:42] "GET /api/v1/users/profile/ HTTP/1.1" 200 601
+[21/May/2025 18:57:28] "GET /admin/ HTTP/1.1" 200 19340
+[21/May/2025 18:57:28] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[21/May/2025 18:57:36] "GET /admin/user/customuser/add/ HTTP/1.1" 200 31972
+[21/May/2025 18:57:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:57:41] "GET /admin/user/customuser/ HTTP/1.1" 200 23598
+[21/May/2025 18:57:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:58:12] "GET /admin/user/customuser/22305555-a31c-4b7b-a883-d8d804765dd1/change/ HTTP/1.1" 200 44441
+[21/May/2025 18:58:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[21/May/2025 18:58:18] "GET /admin/user/customuser/22305555-a31c-4b7b-a883-d8d804765dd1/password/ HTTP/1.1" 200 16949
+[21/May/2025 18:58:34] "POST /admin/user/customuser/22305555-a31c-4b7b-a883-d8d804765dd1/password/ HTTP/1.1" 302 0
+[21/May/2025 18:58:35] "GET /admin/user/customuser/22305555-a31c-4b7b-a883-d8d804765dd1/change/ HTTP/1.1" 200 44577
+[21/May/2025 18:58:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+{"asctime": "2025-05-21 19:00:02,778", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "", "exc_text": null, "ref": "Exception caught in common exception handler", "exception": "CustomUser matching query does not exist.", "traceback": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.\n", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.", "taskName": null}
+{"asctime": "2025-05-21 19:00:02,780", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/users/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/users/login/'>"}
+[21/May/2025 19:00:02] "POST /api/v1/users/login/ HTTP/1.1" 404 73
+{"asctime": "2025-05-21 19:00:55,383", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "", "exc_text": null, "ref": "Exception caught in common exception handler", "exception": "CustomUser matching query does not exist.", "traceback": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.\n", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.", "taskName": null}
+{"asctime": "2025-05-21 19:00:55,384", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/users/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/users/login/'>"}
+[21/May/2025 19:00:55] "POST /api/v1/users/login/ HTTP/1.1" 404 73
+{"asctime": "2025-05-21 19:01:03,383", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "", "exc_text": null, "ref": "Exception caught in common exception handler", "exception": "CustomUser matching query does not exist.", "traceback": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.\n", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.", "taskName": null}
+{"asctime": "2025-05-21 19:01:03,384", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/users/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/users/login/'>"}
+[21/May/2025 19:01:03] "POST /api/v1/users/login/ HTTP/1.1" 404 73
+[21/May/2025 19:01:08] "GET /admin/user/customuser/22305555-a31c-4b7b-a883-d8d804765dd1/password/ HTTP/1.1" 200 16949
+[21/May/2025 19:01:27] "POST /admin/user/customuser/22305555-a31c-4b7b-a883-d8d804765dd1/password/ HTTP/1.1" 302 0
+[21/May/2025 19:01:27] "GET /admin/user/customuser/22305555-a31c-4b7b-a883-d8d804765dd1/change/ HTTP/1.1" 200 44577
+[21/May/2025 19:01:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+{"asctime": "2025-05-21 19:01:38,303", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "", "exc_text": null, "ref": "Exception caught in common exception handler", "exception": "CustomUser matching query does not exist.", "traceback": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.\n", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.", "taskName": null}
+{"asctime": "2025-05-21 19:01:38,304", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/users/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/users/login/'>"}
+[21/May/2025 19:01:38] "POST /api/v1/users/login/ HTTP/1.1" 404 73
+{"asctime": "2025-05-21 19:01:40,543", "module": "handle_exceptions", "funcName": "custom_exception_handler", "name": "emr.handle_exceptions", "levelname": "ERROR", "message": "", "exc_text": null, "ref": "Exception caught in common exception handler", "exception": "CustomUser matching query does not exist.", "traceback": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.\n", "exc_info": "Traceback (most recent call last):\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 497, in dispatch\n    self.initial(request, *args, **kwargs)\n  File \"/var/www/html/electronic_medical_report/base/base_views.py\", line 86, in initial\n    self.check_throttles(request)\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/views.py\", line 359, in check_throttles\n    if not throttle.allow_request(request, self):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 119, in allow_request\n    self.key = self.get_cache_key(request, view)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/throttling.py\", line 194, in get_cache_key\n    if request.user and request.user.is_authenticated:\n       ^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 231, in user\n    self._authenticate()\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/rest_framework/request.py\", line 384, in _authenticate\n    user_auth_tuple = authenticator.authenticate(self)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/emr/authenticate.py\", line 39, in authenticate\n    user = self.user_model.objects.get(id=token.payload[\"user_id\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\nuser.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.", "taskName": null}
+{"asctime": "2025-05-21 19:01:40,544", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/users/login/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/users/login/'>"}
+[21/May/2025 19:01:40] "POST /api/v1/users/login/ HTTP/1.1" 404 73
+[21/May/2025 19:02:14] "POST /api/v1/users/login/ HTTP/1.1" 200 688
+[21/May/2025 19:02:26] "GET /api/v1/users/profile HTTP/1.1" 301 0
+[21/May/2025 19:02:26] "GET /api/v1/users/profile/ HTTP/1.1" 200 596
+{"asctime": "2025-05-21 19:08:34,189", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/prescription/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/prescription/'>"}
+[21/May/2025 19:08:34] "POST /api/prescription/ HTTP/1.1" 404 4650
+{"asctime": "2025-05-21 19:08:40,982", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/prescriptions/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/prescriptions/'>"}
+[21/May/2025 19:08:40] "POST /api/prescriptions/ HTTP/1.1" 404 4653
+{"asctime": "2025-05-21 19:08:49,073", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/prescriptions/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/prescriptions/'>"}
+[21/May/2025 19:08:49] "POST /api/v1/prescriptions/ HTTP/1.1" 404 6827
+{"asctime": "2025-05-21 19:08:53,336", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/prescription", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/prescription'>"}
+[21/May/2025 19:08:53] "POST /api/v1/prescription HTTP/1.1" 404 6821
+{"asctime": "2025-05-21 19:09:08,203", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/prescription/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/prescription/'>"}
+[21/May/2025 19:09:08] "POST /api/v1/prescription/ HTTP/1.1" 404 6824
+[21/May/2025 19:09:22] "POST /api/v1/users/login/ HTTP/1.1" 200 689
+{"asctime": "2025-05-21 19:09:38,721", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/prescriptions/", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: POST '/api/v1/prescriptions/'>"}
+[21/May/2025 19:09:38] "POST /api/v1/prescriptions/ HTTP/1.1" 404 6827
+{"asctime": "2025-05-21 19:10:27,810", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /api/v1/prescriptions", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/api/v1/prescriptions'>"}
+[21/May/2025 19:10:27] "GET /api/v1/prescriptions HTTP/1.1" 404 6823
+{"asctime": "2025-05-21 19:10:28,229", "module": "log", "funcName": "log_response", "name": "django.request", "levelname": "WARNING", "message": "Not Found: /favicon.ico", "exc_text": null, "taskName": null, "status_code": 404, "request": "<WSGIRequest: GET '/favicon.ico'>"}
+[21/May/2025 19:10:28] "GET /favicon.ico HTTP/1.1" 404 4631
+{"asctime": "2025-05-21 19:11:59,109", "module": "autoreload", "funcName": "trigger_reload", "name": "django.utils.autoreload", "levelname": "INFO", "message": "/var/www/html/electronic_medical_report/emr/urls.py changed, reloading.", "exc_text": null, "taskName": null}
+[33m ................ [0m 
+[33m ................ [0m 
+[91m [1m Please make super admin during initial setup [0m 
+[33m ................ [0m 
+[33m ................ [0m 
+Performing system checks...
+
+May 21, 2025 - 17:59:57
+Django version 5.1.3, using settings 'emr.dev_settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+{"asctime": "2025-05-21 19:12:00,617", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+System check identified some issues:
+
+WARNINGS:
+?: (ckeditor.W001) django-ckeditor bundles CKEditor 4.22.1 which isn't supported anmyore and which does have unfixed security issues, see for example https://ckeditor.com/cke4/release/CKEditor-4.24.0-LTS . You should consider strongly switching to a different editor (maybe CKEditor 5 respectively django-ckeditor-5 after checking whether the CKEditor 5 license terms work for you) or switch to the non-free CKEditor 4 LTS package. See https://ckeditor.com/ckeditor-4-support/ for more on this. (Note! This notice has been added by the django-ckeditor developers and we are not affiliated with CKSource and were not involved in the licensing change, so please refrain from complaining to us. Thanks.)
+?: (staticfiles.W004) The directory '/var/www/html/electronic_medical_report/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 2 issues (0 silenced).
+{"asctime": "2025-05-21 19:45:24,441", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+System check identified some issues:
+
+WARNINGS:
+?: (ckeditor.W001) django-ckeditor bundles CKEditor 4.22.1 which isn't supported anmyore and which does have unfixed security issues, see for example https://ckeditor.com/cke4/release/CKEditor-4.24.0-LTS . You should consider strongly switching to a different editor (maybe CKEditor 5 respectively django-ckeditor-5 after checking whether the CKEditor 5 license terms work for you) or switch to the non-free CKEditor 4 LTS package. See https://ckeditor.com/ckeditor-4-support/ for more on this. (Note! This notice has been added by the django-ckeditor developers and we are not affiliated with CKSource and were not involved in the licensing change, so please refrain from complaining to us. Thanks.)
+?: (staticfiles.W004) The directory '/var/www/html/electronic_medical_report/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 2 issues (0 silenced).
+{"asctime": "2025-05-21 19:55:58,929", "module": "autoreload", "funcName": "trigger_reload", "name": "django.utils.autoreload", "levelname": "INFO", "message": "/var/www/html/electronic_medical_report/prescription/serializers.py changed, reloading.", "exc_text": null, "taskName": null}
+[33m ................ [0m 
+[33m ................ [0m 
+[91m [1m Please make super admin during initial setup [0m 
+[33m ................ [0m 
+[33m ................ [0m 
+Performing system checks...
+
+May 21, 2025 - 19:45:25
+Django version 5.1.3, using settings 'emr.dev_settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+{"asctime": "2025-05-21 19:56:00,405", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/checks/urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/core/checks/urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/html/electronic_medical_report/emr/urls.py", line 80, in <module>
+    path("api/v1/prescriptions/", include("prescription.urls")),
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/electronic_medical_report/env/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/var/www/html/electronic_medical_report/prescription/urls.py", line 3, in <module>
+    from .views import PrescriptionViewSet
+  File "/var/www/html/electronic_medical_report/prescription/views.py", line 5, in <module>
+    from .serializers import PrescriptionSerializer
+  File "/var/www/html/electronic_medical_report/prescription/serializers.py", line 6, in <module>
+    from .choices import RoleType
+ModuleNotFoundError: No module named 'prescription.choices'
+{"asctime": "2025-05-21 20:19:05,015", "module": "autoreload", "funcName": "run_with_reloader", "name": "django.utils.autoreload", "levelname": "INFO", "message": "Watching for file changes with StatReloader", "exc_text": null, "taskName": null}
+System check identified some issues:
+
+WARNINGS:
+?: (ckeditor.W001) django-ckeditor bundles CKEditor 4.22.1 which isn't supported anmyore and which does have unfixed security issues, see for example https://ckeditor.com/cke4/release/CKEditor-4.24.0-LTS . You should consider strongly switching to a different editor (maybe CKEditor 5 respectively django-ckeditor-5 after checking whether the CKEditor 5 license terms work for you) or switch to the non-free CKEditor 4 LTS package. See https://ckeditor.com/ckeditor-4-support/ for more on this. (Note! This notice has been added by the django-ckeditor developers and we are not affiliated with CKSource and were not involved in the licensing change, so please refrain from complaining to us. Thanks.)
+?: (staticfiles.W004) The directory '/var/www/html/electronic_medical_report/static' in the STATICFILES_DIRS setting does not exist.
+
+System check identified 2 issues (0 silenced).
