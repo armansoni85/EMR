@@ -15,6 +15,7 @@ from django.template.loader import render_to_string
 from django.db.models import Max
 from emr.authenticate import PasswordAuthentication
 from .permissions import (
+    CanViewUser,
     CanCreateUser,
     CanUpdateUser,
     CanDeleteUser,
@@ -334,9 +335,7 @@ class ProfileAPI(CustomViewSetV2):
 
 
 class UserViewsetAPI(CustomViewSetV2):
-    """ """
-
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (CanViewUser,)
     serializer_class = CustomUserSerializer
     model_class = CustomUser
     queryset = CustomUser.objects.all()
@@ -355,17 +354,17 @@ class UserViewsetAPI(CustomViewSetV2):
         # only SuperAdmin can all user whereas other user can see on their hospital users only
         qs = super().get_queryset()
         if self.kwargs.get("pk"):
-            qs = qs.select_related("hospital")
+            qs = qs.select_related("hospital", "created_by")
         current_user = self.request.user
         if current_user.is_superuser:
             return qs
-        elif current_user.role == RoleType.doctor.value[0]:
-            # TODO to make doctor can see only his patients ony. currently doctor can see all patients.
+        qs = qs.filter(is_superuser=False, hospital_id=current_user.hospital_id)
+        if current_user.role == RoleType.doctor.value[0]:
             return qs.filter(
-                hospital_id=current_user.hospital_id, role=RoleType.patient.value[0]
+                created_by_id=current_user.id, role=RoleType.patient.value[0]
             )
         else:
-            return qs.filter(hospital_id=current_user.hospital_id, is_superuser=False)
+            return qs
 
     def get_serializer_context(self):
         context = super(UserViewsetAPI, self).get_serializer_context()

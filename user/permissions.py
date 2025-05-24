@@ -3,6 +3,18 @@ from user.choices import RoleType
 from user.models import CustomUser
 
 
+class CanViewUser(BasePermission):
+    def has_permission(self, request, view):
+        user = request.user
+        if user.is_authenticated:
+            if user.is_superuser or user.role in [
+                RoleType.hospital_admin.value[0],
+                RoleType.doctor.value[0],
+            ]:
+                return True
+        return False
+
+
 class CanCreateUser(BasePermission):
     """Checks the user create permission for the logged in user / current user"""
 

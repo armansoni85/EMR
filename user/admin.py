@@ -97,7 +97,7 @@ class CustomUserAdmin(UserAdmin):
         "last_name",
         "is_active",
         "is_blocked",
-        # 'company'
+        'created_by'
     )
     list_filter = (
         "is_superuser",

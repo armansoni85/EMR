@@ -8,8 +8,13 @@ from base.utils import get_current_datetime
 
 # importing the models from the consultation app
 from .models import Consultation, ConsultationRecording
+
+# importing the models from the appointments app
 from appointments.models import Appointment
 from appointments.choices import AppointmentStatus
+from appointments.serializers import AppointmentSerializer
+
+# importing the strings
 from strings import OWN_APPOINTMENT_CONSULTATION_ONLY_ALLOWED, FOLLOW_UP_DATE_PAST
 
 
@@ -38,6 +43,7 @@ class ConsultationDetailSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
+        data["appointment"] = AppointmentSerializer(instance=instance.appointment).data
         data["recordings"] = ConsultationRecordingListSerializer(
             instance=instance.consultation_recordings.all(), many=True
         ).data
@@ -110,6 +116,11 @@ class ConsultationSerializer(ModelSerializer):
             )
 
         return updated_instance
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data["appointment"] = AppointmentSerializer(instance=instance.appointment).data
+        return data
 
 
 class ConsultationRecordingSerializer(ModelSerializer):

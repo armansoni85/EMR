@@ -8,4 +8,5 @@ class UserFilterSet(FilterBaseSet):
         fields = [
             "role",
             "is_blocked",
+            "created_by",
         ]

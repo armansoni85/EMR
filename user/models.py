@@ -97,6 +97,13 @@ class CustomUser(AbstractUser):
         unique=True,
         db_index=True,
     )
+    created_by = models.ForeignKey(
+        "self",
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="users_created_by_me",
+    )
     country = CountryField(null=True, blank=True)  # pip install django-countries
     work_email = models.EmailField(null=True, blank=True, verbose_name=_("Work Email"))
     profile_picture = models.ImageField(

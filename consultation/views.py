@@ -34,7 +34,7 @@ class ConsultationAPI(CustomViewSetV2):
     permission_classes = (CanCreateUpdateConsultation,)
     serializer_class = ConsultationSerializer
     model_class = Consultation
-    queryset = Consultation.objects.select_related("appointment").all()
+    queryset = Consultation.objects.select_related("appointment","appointment__doctor","appointment__patient").all()
     filter_backends = (filters.DjangoFilterBackend, SearchFilter)
     filterset_class = ConsultationFilterset
 
@@ -70,9 +70,7 @@ class ConsultationAPI(CustomViewSetV2):
             qs = qs.filter(appointment__doctor_id=user_id)
         else:
             qs = qs.filter(appointment__patient_id=user_id)
-        # if request method is GET detail then pull all recording associated with that consultion
         if self.request.method == "GET" and self.kwargs.get("pk"):
-            # qs=qs.annotate(recordings=ConsultationRecording.objects.filter(consultation=OuterRef('id')).only('recording_audio'))
             qs = qs.prefetch_related("consultation_recordings")
         return qs
 
@@ -158,6 +156,7 @@ class ConsultationRecordingAnalyze(CustomAPIView):
                     recording_texts = [
                         chatgpt.get_doctor_ai_consultation(
                             get_full_file_path(recording.recording_audio.name)
+                            
                         )
                         for recording in recordings
                     ]

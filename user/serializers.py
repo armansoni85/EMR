@@ -112,6 +112,12 @@ class UserLogoutSerializers(serializers.Serializer):
     refresh = serializers.CharField(required=True)
 
 
+class CreatedBySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = ("id", "first_name", "last_name", "email")
+
+
 class CustomUserSerializer(CountryFieldMixin, serializers.ModelSerializer):
     email = CustomEmailField(
         max_length=254,
@@ -141,9 +147,10 @@ class CustomUserSerializer(CountryFieldMixin, serializers.ModelSerializer):
             "is_blocked",
             "password",
             "confirm_password",
+            "created_by",
         )
 
-        read_only_fields = ("date_joined",)
+        read_only_fields = ("date_joined", "created_by")
         write_only_fields = ("confirm_password",)
 
     def validate(self, validated_data):
@@ -173,6 +180,7 @@ class CustomUserSerializer(CountryFieldMixin, serializers.ModelSerializer):
 
     def create(self, validated_data):
         validated_data["is_active"] = True
+        validated_data["created_by"] = self.context["request"].user
         return super().create(validated_data)
 
     def update(self, instance, validated_data):
@@ -187,6 +195,8 @@ class CustomUserSerializer(CountryFieldMixin, serializers.ModelSerializer):
             data["flag"] = instance.country.flag
         if instance.hospital:
             data["hospital"] = HospitalListSerializer(instance.hospital).data
+        if instance.created_by:
+            data["created_by"] = CreatedBySerializer(instance.created_by).data
         return data
 
 
