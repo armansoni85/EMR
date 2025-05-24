@@ -31,7 +31,7 @@ class ChatGPT:
 
     def __init__(self):
         # self.client = OpenAI(api_key=settings.OPENAI_API_KEY)
-        self.client = OpenAI(api_key="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")
+        self.client = OpenAI(api_key="")
 
     def __get_transcription(self, audio_file_file: str) -> str:
         audio_file = open(audio_file_file, "rb")
