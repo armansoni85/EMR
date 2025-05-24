@@ -182,6 +182,38 @@ class CustomUser(AbstractUser):
     change_password = models.BooleanField(
         default=False, verbose_name=_("Change Password")
     )
+
+    blood_group = models.CharField(
+        max_length=3,
+        choices=[
+            ('A+', 'A+'), ('A-', 'A-'),
+            ('B+', 'B+'), ('B-', 'B-'),
+            ('AB+', 'AB+'), ('AB-', 'AB-'),
+            ('O+', 'O+'), ('O-', 'O-'),
+        ],
+        null=True,
+        blank=True,
+        verbose_name=_("Blood Group"),
+    )
+    height_feet = models.PositiveIntegerField(
+        null=True, blank=True, verbose_name=_("Height (Feet)")
+    )
+    height_inches = models.PositiveIntegerField(
+        null=True, blank=True, verbose_name=_("Height (Inches)")
+    )
+    weight_kilo = models.PositiveIntegerField(
+        null=True, blank=True, verbose_name=_("Weight (Kilo)")
+    )
+    weight_grams = models.PositiveIntegerField(
+        null=True, blank=True, verbose_name=_("Weight (Grams)")
+    )
+    disease = models.CharField(
+        max_length=255,
+        null=True,
+        blank=True,
+        verbose_name=_("Disease"),
+        )
+
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
     objects = CustomUserManager()

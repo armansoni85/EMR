@@ -148,6 +148,12 @@ class CustomUserSerializer(CountryFieldMixin, serializers.ModelSerializer):
             "password",
             "confirm_password",
             "created_by",
+            "disease",
+            "height_feet",
+            "height_inches",
+            "weight_kilo",
+            "weight_grams",
+
         )
 
         read_only_fields = ("date_joined", "created_by")
