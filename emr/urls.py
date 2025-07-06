@@ -70,6 +70,10 @@ urlpatterns = [
         include("employee.urls"),
     ),
     path(
+        "api/v1/dashboard/",
+        include("dashboard.urls"),
+    ),
+    path(
         "api/v1/appointments/",
         include("appointments.urls"),
     ),
