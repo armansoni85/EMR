@@ -57,6 +57,9 @@ class AppointmentSerializer(serializers.ModelSerializer):
         data = super().to_representation(instance)
         data["patient"] = UserListSerializers(instance.patient).data
         data["doctor"] = UserListSerializers(instance.doctor).data
+        data["consultation_ai_voice_note"] = (
+            instance.recording_ai_voice_note if hasattr(instance,'recording_ai_voice_note') else ''
+        )
         return data
 
     def validate(self, attrs):
@@ -100,3 +103,4 @@ class AppointmentSerializer(serializers.ModelSerializer):
                 raise serializers.ValidationError(APPOINTMENT_ALREADY_BOOKED)
 
         return data
+

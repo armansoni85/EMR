@@ -1,7 +1,7 @@
 from rest_framework import filters
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.permissions import IsAuthenticated
-from django.db.models import Q
+from django.db.models import Q, Subquery, OuterRef
 from base.base_views import (
     CustomViewSetV2,
 )
@@ -37,7 +37,17 @@ class AppointmentAPI(CustomViewSetV2):
     ]
 
     def get_queryset(self):
+        from consultation.models import Consultation
+
         qs = self.queryset.select_related("patient", "doctor")
+        if self.request.method == "GET":
+            qs = qs.annotate(
+                recording_ai_voice_note=Subquery(
+                    Consultation.objects.filter(appointment=OuterRef("pk")).values(
+                        "recording_ai_voice_note"
+                    )[:1]
+                )
+            )
         user = self.request.user
         if user.is_superuser:
             return qs
@@ -48,7 +58,9 @@ class AppointmentAPI(CustomViewSetV2):
                 | Q(patient__hospital_id=user.hospital_id)
             )
 
-        return qs.filter(Q(doctor_id=user.id) | Q(patient_id=user.id)).order_by('appointment_datetime')
+        return qs.filter(Q(doctor_id=user.id) | Q(patient_id=user.id)).order_by(
+            "appointment_datetime"
+        )
 
     def initial(self, request, *args, **kwargs):
         method = request.method
@@ -75,3 +87,4 @@ class AppointmentAPI(CustomViewSetV2):
 
     def delete(self, request, *args, **kwargs):
         return super().destroy(request, *args, **kwargs)
+

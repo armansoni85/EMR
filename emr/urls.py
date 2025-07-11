@@ -74,6 +74,10 @@ urlpatterns = [
         include("dashboard.urls"),
     ),
     path(
+        "api/v1/Notes/",
+        include("Notes.urls"),
+    ),
+    path(
         "api/v1/appointments/",
         include("appointments.urls"),
     ),
