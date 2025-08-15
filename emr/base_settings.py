@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     "consultation",
     "prescription",
     "Notes",
+    "superbills",
+    "dashboard",
 ]
 
 MIDDLEWARE = [
@@ -373,4 +375,4 @@ FRONTEND_URL = env("FRONTEND_URL")
 API_URL = env("API_URL")
 
 # ChatGPT
-OPENAI_API_KEY = env("OPENAI_API_KEY")
+OPENAI_API_KEY = "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"

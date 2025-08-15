@@ -864,7 +864,7 @@ class LoginThrottleRate(UserRateThrottle):
 
 
 def get_full_file_path(file_path: str):
-    return Path(f"{settings.MEDIA_ROOT}\{file_path}")
+    return Path(f"{settings.MEDIA_ROOT}/{file_path}")
 
 
 def delete_media(file_directory: str) -> bool:

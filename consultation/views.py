@@ -150,6 +150,7 @@ class ConsultationRecordingAnalyze(CustomAPIView):
             )
             if consultation_instance:
                 recordings = consultation_instance.consultation_recordings.all()
+                print("---------------------------------------------")
                 if recordings.exists():
                     chatgpt = ChatGPT()
                     # Process all recordings and concatenate the AI consultation results

@@ -7,6 +7,6 @@ router.register(r"icd-codes", ICDCodeViewSet, basename="icdcode")
 router.register(r"cpt-codes", CPTCodeViewSet, basename="cptcode")
 
 urlpatterns = [
-    path("api/v1/", include(router.urls)),
+    path("", include(router.urls)),
 ]
 
