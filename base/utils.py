@@ -68,6 +68,7 @@ from strings import (
     INVALID_FILE_EXTENSION_MESSAGE,
     ALLOWED_EXTENSIONS,
     ALLOWED_AUDIO_EXTENSIONS,
+    LIMITED_ALLOWED_EXTENSIONS,
 )
 
 
@@ -456,6 +457,10 @@ def validate_document_extension(value):
 
 def validate_consultation_recording_extension(value):
     validate_file_extension(ALLOWED_AUDIO_EXTENSIONS.split(","), value)
+
+
+def validate_medical_document_extension(value):
+    validate_file_extension(LIMITED_ALLOWED_EXTENSIONS.split(","), value)
 
 
 def convert_datetime_str_to_datetime(date_str=None, time_str=None, format="%Y/%m/%d"):
@@ -864,7 +869,7 @@ class LoginThrottleRate(UserRateThrottle):
 
 
 def get_full_file_path(file_path: str):
-    return Path(f"{settings.MEDIA_ROOT}/{file_path}")
+    return Path(f"{settings.MEDIA_ROOT}\{file_path}")
 
 
 def delete_media(file_directory: str) -> bool:

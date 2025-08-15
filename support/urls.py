@@ -1,12 +1,14 @@
-from rest_framework.routers import DefaultRouter
-from .views import ConversationViewSet, MessageViewSet
-from django.urls import path, include
+from django.urls import path
+from support import views
 
-router = DefaultRouter()
-router.register(r'conversations', ConversationViewSet, basename='conversation')
-router.register(r'messages', MessageViewSet, basename='message')
 
 urlpatterns = [
-    path("api/v1/", include(router.urls)),
+    path(
+        "ai-chat/",
+        views.AIChatSupportView.as_view({"get": "list", "post": "post"}),
+    ),
+    path(
+        "ai-chat/<str:pk>/",
+        views.AIChatSupportView.as_view({"get": "get"}),
+    ),
 ]
-
