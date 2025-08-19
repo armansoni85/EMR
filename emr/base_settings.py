@@ -4,6 +4,7 @@ import os
 import json
 from django.utils.log import DEFAULT_LOGGING
 import environ
+from pathlib import Path
 
 
 env = environ.Env(
@@ -55,6 +56,8 @@ INSTALLED_APPS = [
     "Notes",
     "superbills",
     "dashboard",
+    "document",
+    "support",
 ]
 
 MIDDLEWARE = [
@@ -369,6 +372,17 @@ EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+
+# Media (for file upload)
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+# OPENAI Models
+AI_TEXT_MODEL = env("AI_TEXT_MODEL", default="gpt-3.5-turbo")
+AI_AUDIO_TRANSCRIPT_MODEL = env("AI_AUDIO_TRANSCRIPT_MODEL", default="whisper-1")
 
 # FRONTEND URL
 FRONTEND_URL = env("FRONTEND_URL")

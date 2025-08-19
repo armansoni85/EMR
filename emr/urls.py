@@ -90,6 +90,11 @@ urlpatterns = [
         include("superbills.urls"),
     ),
     path("api/v1/prescriptions/", include("prescription.urls")),
+    path(
+        "api/v1/medical-documents/",
+        include("document.urls"),
+    ),
+    path("api/v1/support/", include("support.urls")),
     # path("api/v1/notifications/", include("notification.urls")),
     # path("api/v1/logs/", include("api_log.urls")),
 ]
