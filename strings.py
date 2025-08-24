@@ -21,8 +21,9 @@ CREATE_SUCCESS = _("Created successfully.")
 CANNOT_LOGIN = _("Cannot log in with the provided credentials.")
 LOGIN_SUCCESS = _("Logged in successfully.")
 INVALID_LINK = _("Invalid token or link.")
-FILE_UPLOAD_LIMIT = _("File should be less than 5MB.")
-ALLOWED_EXTENSIONS = ".pdf,.doc, .doc,.txt,.rtf,.jpeg,.png"
+MEDICAL_FILE_UPLOAD_LIMIT = _("File should be less than 5MB.")
+ALLOWED_EXTENSIONS = ".pdf,.doc,.docx,.txt,.rtf,.jpeg,.png"
+LIMITED_ALLOWED_EXTENSIONS = ".pdf,.doc,.docx,.jpeg,.png"
 ALLOWED_AUDIO_EXTENSIONS = ".mp3,.webm"
 INVALID_FILE_EXTENSION_MESSAGE = _(
     "Unsupported file extension. Allowed extensions are: %(allowed)s"
@@ -103,7 +104,13 @@ OWN_APPOINTMENT_CONSULTATION_ONLY_ALLOWED = _(
     "Only own appointment consultation is allowed."
 )
 FOLLOW_UP_DATE_PAST = _("Follow up date cannot be in past.")
-DOCTOR_AI_CONSULTATION_PROMPT = "Act as expert doctor and provide consultation in detail with the following: Subjective, Assessment (including Vitals), Patient instruction, and Plan details based on conversation with patient. Mandatorily include relevant ICD-10 codes."
+MEDICAL_DOCUMENT_CROSS_HOSPITAL_ERROR = _(
+    "Medical documents can only be shared between users of the same hospital."
+)
+MEDICAL_DOCUMENT_BOTH_PATIENT_ERROR = _(
+    "One patient cannot send data to another patient"
+)
+DOCTOR_AI_CONSULTATION_PROMPT = "Act as expert doctor and provide consultation with following Subjective, Vitals, Assessment, and Plan details based on conversation with patient in english"  # donot add translation here
 AI_CHAT_SUPPORT_PROMPT = """
     You are a virtual health assistant for a hospital. Your role is to provide general health-related information, answer common medical questions, and guide patients on when to seek professional medical care. 
     Your responses should be:
